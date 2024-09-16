@@ -44,6 +44,13 @@ public class _06_if_statement {
         if (x <= y) {
             System.out.println("x is less than or equal to y");
         }
+
+        int age = 45;
+        if ( age >= 18 && age <= 67){ // 18 <= age <= 67
+            System.out.println("You can work");
+        } else {
+            System.out.println("You can't work");
+        }
     }
 
     static void is_even(int x) {

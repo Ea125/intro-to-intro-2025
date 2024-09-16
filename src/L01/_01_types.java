@@ -35,10 +35,11 @@ public class _01_types {
 
         char one = '1'; // 49
         char one_val = '1' - '0'; // 1
+        char a = 'a'; // 97
 
-        // 4. Boolean type (בוליאני)
+       // 4. Boolean type (בוליאני)
         boolean bool = true; // true or false
-
+        boolean bool2 = false;
 
         // 5. String type (מחרוזת)
         String str = "Hello, World!";
