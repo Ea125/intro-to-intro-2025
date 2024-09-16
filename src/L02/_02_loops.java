@@ -1,6 +1,6 @@
-package L01;
+package L02;
 
-public class _08_loops {
+public class _02_loops {
 
     /*
     לולאות מאפשרות לנו לחזור על קוד מסוים כמה פעמים עד שתנאי מסוים מתקיים.

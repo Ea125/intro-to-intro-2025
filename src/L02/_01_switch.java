@@ -1,6 +1,6 @@
-package L01;
+package L02;
 
-public class _07_switch {
+public class _01_switch {
     /*
     לפעמים נרצה לבדוק ערך מסוים ולפיו לבצע פעולה מסוימת.
     כאשר יש לנו רשימה של אפשרויות קבועות נוכל להשתמש במבנה switch-case.
