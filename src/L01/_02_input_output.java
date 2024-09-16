@@ -9,6 +9,11 @@ public class _02_input_output {
         System.out.println(1);
         System.out.println(1 + "1");
 
+        // הדפסת טקסט ללא ירידת שורה
+        System.out.print("Hello");
+        System.out.print(", World!");
+        System.out.println("\n"); // שורה חדשה
+
         // קליטת קלט מהמשתמש
         Scanner scanner = new Scanner(System.in);
 

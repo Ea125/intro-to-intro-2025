@@ -1,6 +1,6 @@
 package L01;
 
-public class _07_loops {
+public class _08_loops {
 
     /*
     לולאות מאפשרות לנו לחזור על קוד מסוים כמה פעמים עד שתנאי מסוים מתקיים.
@@ -32,6 +32,15 @@ public class _07_loops {
         // נועדה ללולאות עם מספר פעמים קבוע
         for (int k = 0; k < 5; k++) {
             System.out.println(k);
+        }
+
+
+        // הדפסה של משולש הפוך
+        for (int k = 5; k > 0; k--) {
+            for (int l = 0; l < k; l++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
 
         /*
