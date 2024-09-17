@@ -32,10 +32,8 @@ public class _01_types {
         // 3. Character type (תווים)
         char c = 'A'; // 2 bytes (0 to 65535)
         char c2 = 65; // same as above
-
         char one = '1'; // 49
         char one_val = '1' - '0'; // 1
-        char a = 'a'; // 97
 
        // 4. Boolean type (בוליאני)
         boolean bool = true; // true or false

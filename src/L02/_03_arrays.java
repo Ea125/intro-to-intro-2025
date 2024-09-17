@@ -28,9 +28,9 @@ public class _03_arrays {
         int grade1, grade2, grade3 /*...*/, grade30;
 
         // יצירת מערך
+        Scanner scanner = new Scanner(System.in);
         int[] grades = new int[30];
         // int grades[] = new int[30]; // C-style
-        Scanner scanner = new Scanner(System.in);
         // השמה למערך
 //        for (int i = 0; i < 30; i++) {
 //            System.out.println("Enter grade number " + (i + 1));
@@ -42,9 +42,9 @@ public class _03_arrays {
         כלומר במערך בגודל 30 האיבר הראשון יהיה באינדקס 0 והאחרון יהיה באינדקס 29
          */
 
-        // שגיאות - אם ננסה לגשת לאינדקס שלא קיים נקבל שגיאת בזמן הרצת התוכנית
-        // System.out.println(grades[30]); // ArrayIndexOutOfBoundsException
-        // grades[-1] = 5; // ArrayIndexOutOfBoundsException
+//         שגיאות - אם ננסה לגשת לאינדקס שלא קיים נקבל שגיאת בזמן הרצת התוכנית
+//         System.out.println(grades[30]); // ArrayIndexOutOfBoundsException
+//         grades[-1] = 5; // ArrayIndexOutOfBoundsException
 
 
         // אורך של מערך
@@ -55,7 +55,7 @@ public class _03_arrays {
         /*
         אם ננסה לבצע השמה של מערך אחד למערך אחר נקבל התנהגות טיפה מוזרה.
          */
-        int[] arr1 = {1, 2, 3}; // השמה של ערכים באתחול
+        int[] arr1 = {91, 82, 73}; // השמה של ערכים באתחול
         int[] arr2 = arr1;
         arr2[0] = 5;
         System.out.println(arr1[0]); // 5

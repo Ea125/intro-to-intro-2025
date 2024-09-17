@@ -6,14 +6,13 @@ public class _02_input_output {
     public static void main(String[] args) {
         // הדפסת טקסט למסך
         System.out.println("Hello, World!");
-        System.out.println(1);
+        System.out.println(1+1);
         System.out.println(1 + "1");
         System.out.println("1" + 1 + 1 + 1);
 
         // הדפסת טקסט ללא ירידת שורה
         System.out.print("Hello");
-        System.out.print(", World!");
-        System.out.println("\n"); // שורה חדשה
+        System.out.print(", World!\n"); // ירידת שורה
 
         // קליטת קלט מהמשתמש
         Scanner scanner = new Scanner(System.in);
