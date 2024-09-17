@@ -2,7 +2,7 @@ package L02;
 
 import java.util.Scanner;
 
-public class _04_string_operations {
+public class _05_string_operations {
     /*
     עד עכשיו לא ממש התעסקנו עם אובייקטים שונים חוץ מהטיפוסים הפרימיטיביים (וScanner)
 
