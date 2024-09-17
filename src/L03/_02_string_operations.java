@@ -1,8 +1,8 @@
-package L02;
+package L03;
 
 import java.util.Scanner;
 
-public class _05_string_operations {
+public class _02_string_operations {
     /*
     עד עכשיו לא ממש התעסקנו עם אובייקטים שונים חוץ מהטיפוסים הפרימיטיביים (וScanner)
 

@@ -1,6 +1,6 @@
-package L02;
+package L03;
 
-public class _04_matrix {
+public class _01_matrix {
     /*
     מערך יכול להיות גם מערך של מערכים - מטריצה
 
