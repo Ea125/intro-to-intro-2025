@@ -46,6 +46,12 @@ public class _01_matrix {
                 {90, 80, 70}
         };
 
+        int[][] grades3 = new int[4][];
+
+        grades3[0] = new int[3];
+        grades3[1] = new int[2];
+        grades3[2] = new int[4];
+
 
     }
 }

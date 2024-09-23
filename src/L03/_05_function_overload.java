@@ -16,7 +16,7 @@ public class _05_function_overload {
     }
 
     public static int min(int x, int y, int z) {
-        if (x < y && x < z) {
+        if ((x < y) && (x < z)) {
             return x;
         }
 

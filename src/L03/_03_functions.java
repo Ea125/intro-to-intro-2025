@@ -52,7 +52,7 @@ public class _03_functions {
      */
     public static int sum(int x, int y) {
         int sum = x + y;
-        return x + y;
+        return sum;
     }
 
     /*
@@ -68,6 +68,7 @@ public class _03_functions {
      */
     public static void sayHello(String name) {
         System.out.println("Hello " + name);
+
     }
 
     /*

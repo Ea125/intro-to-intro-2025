@@ -12,6 +12,7 @@ public class _02_string_operations {
      */
 
     public static void main(String[] args) {
+        /*
         // יצירת מחרוזת
         String s = "Hello, World!";
 
@@ -78,15 +79,18 @@ public class _02_string_operations {
         // המרת מספר למחרוזת
         int x = 10;
         String x_str = String.valueOf(x);
+        String x_str2 = x + "";
+
         System.out.println(x_str);
 
         // המרת מחרוזת למספר
         String y_str = "20";
         int y = Integer.parseInt(y_str);
         System.out.println(y);
-
+        */
         // פיצול מחרוזת למערך מחרוזות - עדיין לא ראינו מערכים
-        String[] parts = s.split(",");
+        String s = "10+5+6";
+        String[] parts = s.split("\\+");
         for (String part : parts) {
             System.out.println(part);
         }
