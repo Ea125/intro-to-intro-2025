@@ -16,13 +16,22 @@ public class _01_types {
      */
     public static void main(String[] args) {
         // 1. Integer types (מספרים שלמים)
+        //it's all power of 2
+        //-2^7 to 2^7 - 1
         byte b = 127; // 1 byte (-128 to 127)
+        //-2^15 to 2^15 - 1
         short s = 32767; // 2 bytes (-32768 to 32767)
+        //-2^31 to 2^31 - 1
         int i = 2147483647; // 4 bytes (-2147483648 to 2147483647)
+        //-2^63 to 2^63 - 1
         long l = 9223372036854775807L; // 8 bytes (-9223372036854775808 to 9223372036854775807) // make sure to add 'L' at the end
+        //* the default is int so long needs to be attached with L
+        //remember, the risky part here is over the limit of the type
 
         // 2. Floating point types (מספרים עשרוניים)
         // E means 10^
+        //the problem here is the accurate in very detailed number, so doing compression is risky won't
+        //the default is double
         float f = 3.4028E8f; // 4 bytes // make sure to add 'f' at the end
         float f2 = 340280000; // same as above
         double d = 1.797E-5; // 8 bytes
@@ -30,6 +39,7 @@ public class _01_types {
 
 
         // 3. Character type (תווים)
+        //no minus, there is no meaning to represent value in negative
         char c = 'A'; // 2 bytes (0 to 65535)
         char c2 = 65; // same as above
         char one = '1'; // 49
@@ -40,6 +50,7 @@ public class _01_types {
         boolean bool2 = false;
 
         // 5. String type (מחרוזת)
+        //un primitive type
         String str = "Hello, World!";
 
 
@@ -52,7 +63,7 @@ public class _01_types {
          */
         final int MAX_VALUE = 100;
         final double PI = 3.14159;
-        final String NAME = "Shay Gali";
+        final String NAME = "Evyatar Altman";
 
 //        PI = 3.14; // Error
     }
