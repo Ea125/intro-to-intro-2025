@@ -4,7 +4,7 @@ public class _04_math_arithmetic {
 
     public static void main(String[] args) {
         int x = 123;
-        int y = 7;
+        int y = 5;
 
         // חיבור
         int sum = x + y;
@@ -16,6 +16,7 @@ public class _04_math_arithmetic {
         int mul = x * y;
 
         // חילוק
+        // יש שארית 3 שנעלמת
         int div = x / y;
 
         // שארית
@@ -28,9 +29,24 @@ public class _04_math_arithmetic {
         System.out.println("x * y = " + mul);
         System.out.println("x / y = " + div);
         System.out.println("x % y = " + mod);
+        //קיצור, תראו את זה הרבה
+        int i = 0;
+        i += 1;
+        System.out.println("i = " + i);
+        i++;
+        System.out.println("i = " + i);
+        i -= 1;
+        System.out.println("i = " + i);
+        i++;
+        i *= 5;
+        System.out.println("i = " + i);
+
+
+
 
 
         // הדספת ספרת האחדות של מספר
+        //יש כל מיני שאלות על זה
         System.out.println("x % 10 = " + x % 10);
 
 

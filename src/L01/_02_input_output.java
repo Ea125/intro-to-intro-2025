@@ -12,9 +12,15 @@ public class _02_input_output {
 
         // הדפסת טקסט ללא ירידת שורה
         System.out.print("Hello");
-        System.out.print(", World!\n"); // ירידת שורה
+        System.out.print(", World!\n");
+        // ירידת שורה
+        System.out.println("Hello, World!");
+        //print variable
+        int var = 1;
+        System.out.println(var);
 
         // קליטת קלט מהמשתמש
+        //הגדרה של הקלט של המערכת
         Scanner scanner = new Scanner(System.in);
 
         // קליטת מספר שלם

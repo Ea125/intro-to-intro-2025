@@ -13,4 +13,7 @@ public class _00_comments {
     3. תיעוד - כל הטקסט שבין /** ועד * / יהיה תיעוד.
 (בקורס אתם תהיו חייבים לכתוב הערות, וגם דוקומטציה טובה על הקוד שלכם)
      */
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
 }
