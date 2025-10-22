@@ -1,7 +1,14 @@
 package L01;
 
 public class _00_comments {
+//IntelliJ IDEA
+    /*
+    */
 
+    /**
+     *
+     * @param args
+     */
     /*
     אנחנו יכולים לשים הערות בקוד בכל שפת תכנות.
 
@@ -14,6 +21,10 @@ public class _00_comments {
 (בקורס אתם תהיו חייבים לכתוב הערות, וגם דוקומטציה טובה על הקוד שלכם)
      */
     public static void main(String[] args) {
+        /*
+
+        **/
         System.out.println("Hello, world!");
     }
 }
+

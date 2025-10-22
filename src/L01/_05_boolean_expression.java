@@ -18,17 +18,17 @@ public class _05_boolean_expression {
 
         // וגם
         // תנאי זה יחזיר אמת רק אם שני התנאים מתקיימים
-        System.out.println("T and T: " + (t && t));
-        System.out.println("T and F: " + (t && f));
-        System.out.println("F and T: " + (f && t));
-        System.out.println("F and F: " + (f && f));
+        System.out.println("T and T: " + (true && t)); // t
+        System.out.println("T and F: " + (t && f)); // f
+        System.out.println("F and T: " + (f && t)); // f
+        System.out.println("F and F: " + (f && f)); // f
 
         // או
         // תנאי זה יחזיר אמת אם לפחות אחד מהתנאים מתקיים
-        System.out.println("T or T: " + (t || t));
-        System.out.println("T or F: " + (t || f));
-        System.out.println("F or T: " + (f || t));
-        System.out.println("F or F: " + (f || f));
+        System.out.println("T or T: " + (t || t)); // t
+        System.out.println("T or F: " + (t || f)); // t
+        System.out.println("F or T: " + (f || t)); // t
+        System.out.println("F or F: " + (f || f)); // f
 
         // לא
         // תנאי זה יחזיר אמת אם התנאי לא מתקיים
@@ -42,5 +42,6 @@ public class _05_boolean_expression {
         2. או
         3. לא
          */
+        System.out.println(t && t || !f);
     }
 }

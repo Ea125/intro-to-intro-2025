@@ -35,32 +35,50 @@ public class _02_loops {
 
         // לולאת while
         // כל עוד התנאי מתקיים הלולאה תמשיך לרוץ
-        int i = 1;
+        //לשים לב לעדכן את התנאי... לבדוק לולאה אינסופית
+        int i = 11;
+        /*
+        * while  (boolean){
+        * }*/
         while (i <= 10) {
+            i++;
             System.out.println(i);
-            i++; // i = i+1
         }
 
 //         לולאת do-while
+//
 //         הלולאה תרוץ לפחות פעם אחת ורק אז תבדוק את התנאי
+
+   /*
         int j;
         Scanner sc = new Scanner(System.in);
         do {
             j = sc.nextInt();
             System.out.println(j);
         } while (j < 5);
+        */
 
 //         לולאת for
 //         נועדה ללולאות עם מספר פעמים קבוע
-        for ( int k = 0; k < 5; k++) {
-            System.out.println(k);
+        for ( i = 0; i < 5;i++) {
+            System.out.print(i + " ");
+
         }
+        System.out.println();
 
 //         הדפסה של משולש הפוך
+        //*
+        //**
+        //***
+        //****
+        //*****
+        //k = k + 1;
         for (int k = 5; k > 0; k--) {
-            for (int l = 0; l < k; l++) {
+
+            for (int l = 0; l <= k; l++) {
                 System.out.print("*");
             }
+
             System.out.println();
         }
 
@@ -76,28 +94,33 @@ public class _02_loops {
 
 //         הדפסה של מספרים זוגיים בלבד
         for (int k = 0; k < 10; k += 2) { // k = k + 2
-            System.out.println(k);
+            System.out.print(k + " ");
         }
+        System.out.println();
 
 //         הדפסת כל האותיות באנגלית
         for (char c = 'a'; c <= 'z'; c++) {
-            System.out.println(c);
+            System.out.print(c + " ");
         }
+        System.out.println();
 
         // הדפסת 10 מספרים רנדומליים
         /*
         הפונקציה Math.random() מחזירה מספר רנדומלי בין 0 ל-1
          */
         for (int k = 0; k < 10; k++) {
-            System.out.println(Math.random());
+            System.out.print(Math.random() + " ");
         }
+        System.out.println();
 
         // הדפסת 10 מספרים רנדומליים בטווח
-        int min = 5;
-        int max = 10;
+        int min = 2;
+        int max = 8;
         for (int k = 0; k < 10; k++) {
-            System.out.println((int) (Math.random() * (max - min + 1) + min));
+            //טווח של המספרים * רנדום 0 - גודל של הטווח
+            System.out.print( ((int) ((Math.random() * (max - min + 1)) + min)) + " ");
         }
+        System.out.println();
         /*
         Math.random() - יחזיר מספר בין 0 ל-1
         max - min + 1 - יחזיר את הטווח של המספרים שאנחנו רוצים
@@ -128,6 +151,8 @@ public class _02_loops {
             }
             System.out.println(k);
         }
+        System.out.println();
+
 //
         // נמשיך להגריל מספרים רנדומליים עד שנקבל 5
         while (true) {
@@ -137,6 +162,38 @@ public class _02_loops {
                 break;
             }
         }
+        int n = 4;
+        i = 1;
+        //1*2*3*4
+        int fact = 1;
+
+        while (i <= n) {
+            fact  = i * fact;
+            i++;
+        }
+        System.out.println("Factorial of " + n + " :" + fact);
+        //setup
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Enter a number: ");
+            n = scanner.nextInt();
+            if (n < 0) {
+                break;
+            }
+            if((n % 5 == 0) && (n % 3 == 0)){
+                System.out.println("FizzBazz");
+            }else if(n % 5 == 0){
+                System.out.println("Bazz");
+            }else if(n % 3 == 0){
+                System.out.println("Fizz");
+            }else{
+                System.out.println("Not FizzBuzz");
+            }
+        }
+
 
 
     }
@@ -144,13 +201,9 @@ public class _02_loops {
 
     // תרגיל:
     // חישוב עצרת
-    static void factorial(int n) {
-        int result = 1;
-        for (int i = 1; i <= n; i++) {
-            result *= i; // result = result * i
-        }
-        System.out.println(result);
-    }
+    // 4! = 1*2*3*4
+
+
 
     /*
     תרגיל:
@@ -161,16 +214,6 @@ public class _02_loops {
     3. אם המספר מתחלק ב-3 וגם ב-5 נדפיס FizzBazz
      */
     static void fizz_bazz(int n) {
-        for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0 && i % 5 == 0) { // ! חשוב לבדוק קודם את המקרה הכללי (אם נבודק את אחד מהוקדמים קודם זה לא ייכנס לפה)
-                System.out.println("FizzBazz");
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Bazz");
-            } else {
-                System.out.println(i);
-            }
-        }
+        System.out.println("Fizz Bazz of " + n);
     }
 }

@@ -29,13 +29,19 @@ public class _03_arrays {
 
         // יצירת מערך
         Scanner scanner = new Scanner(System.in);
+        //<type>[] <name> = new <type>[<number of vars>];
         int[] grades = new int[30];
         // int grades[] = new int[30]; // C-style
         // השמה למערך
-//        for (int i = 0; i < 30; i++) {
-//            System.out.println("Enter grade number " + (i + 1));
-//            grades[i] = scanner.nextInt();
-//        }
+        //[][][][]...[]
+       for (int i = 0; i < 30; i++) {
+         grades[i] = i + 1;
+      }
+        //תרגיל, איך נדפיס?
+        for (int i = 0; i < 30; i++) {
+            System.out.print(grades[i] + " ");
+        }
+        System.out.println();
 
         /*
         נשים לב שכמו בסטרינגים גם במערכים האינדקס מתחיל מ-0
@@ -43,22 +49,23 @@ public class _03_arrays {
          */
 
 //         שגיאות - אם ננסה לגשת לאינדקס שלא קיים נקבל שגיאת בזמן הרצת התוכנית
-//         System.out.println(grades[30]); // ArrayIndexOutOfBoundsException
-//         grades[-1] = 5; // ArrayIndexOutOfBoundsException
+  //       System.out.println(grades[30]); // ArrayIndexOutOfBoundsException
+  //       grades[-1] = 5; // ArrayIndexOutOfBoundsException
 
 
         // אורך של מערך
         // כדי לקבל את מספר האיברים שיש במערך נשתמש במאפיין length
         System.out.println("The length of the array is " + grades.length);
+        int last = grades[grades.length - 1];
 
 
         /*
         אם ננסה לבצע השמה של מערך אחד למערך אחר נקבל התנהגות טיפה מוזרה.
          */
         int[] arr1 = {91, 82, 73}; // השמה של ערכים באתחול
-        int[] arr2 = arr1;
-        arr2[0] = 5;
-        System.out.println(arr1[0]); // 5
+        int[] arr2 = arr1; // {91,82,73}
+        arr2[0] = 5; //
+        System.out.println(arr1[0]);
 
         /*
         אם נריץ את התוכנית נקבל 5 ולא 1, למרות שהשינוי נעשה על ידי המערך arr2 ולא arr1.
@@ -105,6 +112,7 @@ public class _03_arrays {
 
         // דרך נוחה להדפסת מערך
         // נוכל להעזר בפונקצייה מובנת שתדפיס את המערך בצורה יפה
+        //מערך הוא בעצם סוג של אובייקט...
         String[] names = {"Alice", "Bob", "Charlie"};
         System.out.println(Arrays.toString(names)); // [Alice, Bob, Charlie]
 

@@ -32,6 +32,7 @@ public class _01_matrix {
         grades[2][2] = 70;
 
         // הדפסת ציונים
+        //יש כאן לולאה חיצונית ולולאה פנימית
         for (int i = 0; i < grades.length; i++) {
             for (int j = 0; j < grades[i].length; j++) {
                 System.out.print(grades[i][j] + " ");
@@ -45,7 +46,7 @@ public class _01_matrix {
                 {95, 85, 75},
                 {90, 80, 70}
         };
-
+        //זה בעצם מערך של מערכים...
         int[][] grades3 = new int[4][];
 
         grades3[0] = new int[3];

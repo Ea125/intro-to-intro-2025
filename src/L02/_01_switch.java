@@ -14,12 +14,12 @@ public class _01_switch {
         int x = 2;
 
         switch (x) {
+            //if (x == 1)
             case 1:
                 System.out.println("One");
                 break;
             case 2:
                 System.out.println("Two");
-                break;
             case 3:
                 System.out.println("Three");
                 break;
@@ -33,7 +33,7 @@ public class _01_switch {
         כאשר התוכן של המשתנה x הוא 3 נדפיס את המחרוזת "Three".
         כל ערך אחר ידפיס את המחרוזת "Other".
          */
-
+        System.out.println("Please enter day in the week");
         Scanner scanner = new Scanner(System.in);
         String day = scanner.nextLine();
         switch (day) {
@@ -43,6 +43,7 @@ public class _01_switch {
             case "Monday":
                 System.out.println("Second day of the week");
                 break;
+            case "tuesday":
             case "Tuesday":
                 System.out.println("Third day of the week");
                 break;
@@ -63,4 +64,5 @@ public class _01_switch {
         }
 
     }
+    //if there is a time, calculator
 }

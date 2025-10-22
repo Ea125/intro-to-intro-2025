@@ -69,6 +69,7 @@ public class _02_string_operations {
         // החלפת מחרוזת במחרוזת
         // מחזיר מחרוזת חדשה שתכיל את המחרוזת החדשה במקום המחרוזת הישנה
         System.out.println(s.replace("World", "Java"));
+        System.out.println(s)
 
         // המרת מחרוזת לאותיות גדולות
         System.out.println(s.toUpperCase());
@@ -88,7 +89,7 @@ public class _02_string_operations {
         int y = Integer.parseInt(y_str);
         System.out.println(y);
         */
-        // פיצול מחרוזת למערך מחרוזות - עדיין לא ראינו מערכים
+        // פיצול מחרוזת למערך מחרוזות
         String s = "10+5+6";
         String[] parts = s.split("\\+");
         for (String part : parts) {

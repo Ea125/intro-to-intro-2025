@@ -6,11 +6,19 @@ public class _02_input_output {
     public static void main(String[] args) {
         // הדפסת טקסט למסך
         System.out.println("Hello, World!");
+        System.out.print("Hello, World!\n");
+
         System.out.println(1+1);
         System.out.println(1 + "1");
+        System.out.println(1 + 1 + 1 + "1");
+        System.out.println("1" + (1 + 1 + 1));
         System.out.println("1" + 1 + 1 + 1);
 
+
+
         // הדפסת טקסט ללא ירידת שורה
+        System.out.print("Hello");
+        System.out.print("Hello");
         System.out.print("Hello");
         System.out.print(", World!\n");
         // ירידת שורה
@@ -37,6 +45,7 @@ public class _02_input_output {
         System.out.println("Enter a string:");
         String str = scanner.next();
         System.out.println("You entered: " + str);
+
 
         // clear buffer
         // אנחנו מנקים את מה שיכול להיות שנשאר מהקריאות הקודמות
