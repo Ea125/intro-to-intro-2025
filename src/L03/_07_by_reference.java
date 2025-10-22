@@ -28,6 +28,10 @@ public class _07_by_reference {
         }
     }
 
+    public static void addMorning(String s){
+        s = s.concat(" Morning!");
+    }
+
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
@@ -36,5 +40,10 @@ public class _07_by_reference {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
+        System.out.println();
+        String s = "Good";
+        addMorning(s);
+        System.out.println(s);
+
     }
 }

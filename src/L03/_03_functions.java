@@ -32,7 +32,8 @@ public class _03_functions {
      <return_type> - סוג הערך שהפונקציה מחזירה. כגון int, double, String וכדומה.
      סוג מיוחד שעדיין לא ראינו הוא void, שמציין שהפונקציה לא מחזירה ערך.
 
-    <function_name> - השם של הפונקציה, צריך להיות מילה אחת, נהוג לכתוב אותו בcamle case(המילה הראושנה באות קטנה וכל מילה אחרי מתחילה באות גדולה).
+    <function_name> -
+    השם של הפונקציה, צריך להיות מילה אחת, נהוג לכתוב אותו בcamel case(המילה הראושנה באות קטנה וכל מילה אחרי מתחילה באות גדולה).
     בדרך כלל ניתן לפונקציות שמות משמעותיים.
     צריך לשים לב לא לתת לפונקציה שם של מילה שמורה (אחרת נקבל שגיאה)
 
@@ -50,10 +51,15 @@ public class _03_functions {
     /**
      * חיבור שני מספרים
      */
-    public static int sum(int x, int y) {
+    public static int add(int x, int y) {
         int sum = x + y;
         return sum;
     }
+
+    public static int div(int x, int y) {
+        return x / y;
+    }
+
 
     /*
     בדוגמא למעלה אפשר לראות איך הגדרנו את הפונקציה sum:
@@ -70,6 +76,7 @@ public class _03_functions {
         System.out.println("Hello " + name);
 
     }
+    //sayHello("Avi");
 
     /*
     בדוגמא למעלה, ראינו את השימוש לפונקציות void
@@ -78,8 +85,10 @@ public class _03_functions {
 
 
     public static void main(String[] args) {
-        System.out.println("4+5=" + sum(4, 5));
-        System.out.println("4+(-5)=" + sum(4, -5));
+        System.out.println("4 + 5 = " + add(4, 5));
+        System.out.println("4 + (-5) = " + add(4, -5));
+        System.out.println("0/2 = " + div(0, 2));
+
 
         Scanner in = new Scanner(System.in);
         System.out.println("Enter your name: ");

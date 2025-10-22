@@ -1,5 +1,6 @@
 package L03;
 
+
 public class _06_by_value {
     /*
     כאשר אנחנו מעבירים לפונקציה פרמטר, הוא משוכפל, ולא נוכל לעשות עליו שינויים
@@ -15,7 +16,8 @@ public class _06_by_value {
         int x = 5;
         System.out.println("x in main before: " + x); // 5
         increment(x);
-        System.out.println("x in main before: " + x); // 5
+        System.out.println("x in main before: " + x);
+        x = _03_functions.add(x,x);// 10
     }
 
     /*

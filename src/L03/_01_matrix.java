@@ -13,7 +13,6 @@ public class _01_matrix {
     הגדרה כללית תראה
     <type> [][] <name> = new <type>[<rows>][<cols>];
      */
-
     public static void main(String[] args) {
         // יצירת מטריצה
         int[][] grades = new int[3][3];
@@ -34,6 +33,7 @@ public class _01_matrix {
         // הדפסת ציונים
         //יש כאן לולאה חיצונית ולולאה פנימית
         for (int i = 0; i < grades.length; i++) {
+            System.out.print("Course number " + (i + 1) + ": ");
             for (int j = 0; j < grades[i].length; j++) {
                 System.out.print(grades[i][j] + " ");
             }

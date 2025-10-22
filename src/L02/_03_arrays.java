@@ -62,9 +62,12 @@ public class _03_arrays {
         /*
         אם ננסה לבצע השמה של מערך אחד למערך אחר נקבל התנהגות טיפה מוזרה.
          */
+        //arr1 = [I@1be6f5c3 [91][82][73]
         int[] arr1 = {91, 82, 73}; // השמה של ערכים באתחול
         int[] arr2 = arr1; // {91,82,73}
-        arr2[0] = 5; //
+        arr2[2] = 5; //91,82,5
+        //int x = 73;
+        //x = 5;
         System.out.println(arr1[0]);
 
         /*
@@ -105,16 +108,30 @@ public class _03_arrays {
         // לולאת for מיוחדת על מערכים
         // לסוג לולאה הזאת קוראים לולאת for-each
         // היא חוסכת לנו את כל העבודה ה"מלוכלכת" ונותנת לנו רק את הערכים שמעניינים אותנו
-        for (int num : arr1) {
+        for (int num : arr2) {
             System.out.println(num);
         }
+        //arr1 -> {5,82,73}
+        //num = 5
+        //num = 82
 
 
         // דרך נוחה להדפסת מערך
         // נוכל להעזר בפונקצייה מובנת שתדפיס את המערך בצורה יפה
         //מערך הוא בעצם סוג של אובייקט...
         String[] names = {"Alice", "Bob", "Charlie"};
-        System.out.println(Arrays.toString(names)); // [Alice, Bob, Charlie]
+        System.out.println(Arrays.toString(arr1));// [Alice, Bob, Charlie]
+        int[] nums = {1, 2, 3, 4, 5};
+        //5,1,2,3,4
+        int[] nums2 = new int[nums.length];
+        for (int i = 0; i < nums.length - 1; i++) {
+            nums2[i + 1] = nums[i];
+        }
+        nums2[0] = nums[(nums.length - 1)];
 
+        System.out.print("the array is: ");
+        for (int num : nums2) {
+            System.out.print(num + " ");
+        }
     }
 }

@@ -12,20 +12,21 @@ public class _02_string_operations {
      */
 
     public static void main(String[] args) {
-        /*
+
         // יצירת מחרוזת
         String s = "Hello, World!";
 
         // השוואה של שתי מחרוזות
         // הפעם לא נשתמש ב== אלא בפעולת equals
         // (כנראה שאם נשתמש ב== זה יעבוד אבל זה לא תמיד יעבוד)
-        System.out.println("Enter a string:");
+        System.out.println("Enter a string:"); //A
         Scanner scanner = new Scanner(System.in);
         String a = scanner.nextLine();
-        System.out.println("Enter another string:");
+        System.out.println("Enter another string:"); //A A
         String b = scanner.nextLine();
 
         // השוואת מחרוזות
+        //eq a,b
         if (a.equals(b)) {
             System.out.println("The strings are equal");
         } else {
@@ -38,6 +39,7 @@ public class _02_string_operations {
         } else {
             System.out.println("The strings are not equal ignoring case");
         }
+
 
         // בדיקה האם מחרוזת מתחילה במחרוזת אחרת
         if (a.startsWith("Hello")) {
@@ -54,6 +56,7 @@ public class _02_string_operations {
         System.out.println(s.length());
 
         // לקיחת תו ממקום מסוים במחרוזת
+
         System.out.println(s.charAt(0)); // מתחיל מ-0
         System.out.println(s.charAt(2)); // התו השלישי - l
 
@@ -69,7 +72,8 @@ public class _02_string_operations {
         // החלפת מחרוזת במחרוזת
         // מחזיר מחרוזת חדשה שתכיל את המחרוזת החדשה במקום המחרוזת הישנה
         System.out.println(s.replace("World", "Java"));
-        System.out.println(s)
+        System.out.println(s);
+        String l = s.replace("World", "Java");
 
         // המרת מחרוזת לאותיות גדולות
         System.out.println(s.toUpperCase());
@@ -80,7 +84,6 @@ public class _02_string_operations {
         // המרת מספר למחרוזת
         int x = 10;
         String x_str = String.valueOf(x);
-        String x_str2 = x + "";
 
         System.out.println(x_str);
 
@@ -88,13 +91,21 @@ public class _02_string_operations {
         String y_str = "20";
         int y = Integer.parseInt(y_str);
         System.out.println(y);
-        */
+
         // פיצול מחרוזת למערך מחרוזות
-        String s = "10+5+6";
+        s = "10+5+6";
+        // ""
         String[] parts = s.split("\\+");
         for (String part : parts) {
             System.out.println(part);
         }
+
+        String statment = "I am happy";
+        String[] words = statment.split(" ");
+        for (String word : words) {
+            System.out.println(word);
+        }
+
     }
 
 }

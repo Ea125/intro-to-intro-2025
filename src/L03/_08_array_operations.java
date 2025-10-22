@@ -38,6 +38,7 @@ public class _08_array_operations {
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.deepToString(matrix));
 
+
         // מיון מערך - סידור הערכים מהקטן לגדול
         Arrays.sort(array);
         System.out.println(Arrays.toString(array));
