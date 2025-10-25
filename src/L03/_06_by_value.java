@@ -5,19 +5,34 @@ public class _06_by_value {
     /*
     כאשר אנחנו מעבירים לפונקציה פרמטר, הוא משוכפל, ולא נוכל לעשות עליו שינויים
      */
+    /*
+    int,double,float,long,byte,boolean,short,char
+    1 name
+    2 type
+    3 address
+    4 value
 
-    public static void increment(int x){
-        System.out.println("x in func before: " + x); // 5
+    */
+    public static void toUpper(String s){
+        s = s.toUpperCase();
+    }
+    public static int increment(int x){
         x++;
-        System.out.println("x in func after: " + x); // 6
+        return x;
     }
 
     public static void main(String[] args) {
         int x = 5;
-        System.out.println("x in main before: " + x); // 5
-        increment(x);
-        System.out.println("x in main before: " + x);
+        int xFuc = x;
+
+
+        System.out.println("x in func before: " + x); // 5
+
+        System.out.println("x in main after inc: " + increment(x));
         x = _03_functions.add(x,x);// 10
+        String lower = "a";
+        toUpper(lower);
+        System.out.println(lower);
     }
 
     /*

@@ -2,6 +2,8 @@ package L04;
 
 public class _01_recursion {
     /*
+    * */
+    /*
     אחד הקונסטפים הכי מבלבלים בתכנות הם פונקציות רקורסיביות.
 
     פונקציה רקורסיבית היא פונקציה שקוראת לעצמה.
@@ -14,6 +16,9 @@ public class _01_recursion {
     עצרת של 0 היא 1
     n! = n * (n-1)!
 
+
+    f(x) = x = 0 ->  1, x > 0  -> x * f(x - 1)
+
     כלומר אם נדע לחשב את העצרת של n-1, אז נוכל לחשב את העצרת של n.
 
 
@@ -21,11 +26,20 @@ public class _01_recursion {
      */
 
     public static int factorial(int n) {
+        if (n < 0) {
+            return 0;
+        }
         if (n == 0) {
             return 1;
         }
         return n * factorial(n - 1);
     }
+    /*
+    *
+    *
+    * f(4) *f(3
+    * f(5) -> 5 * f(4)
+    * */
 
 
 
@@ -45,6 +59,7 @@ public class _01_recursion {
     אז גם כאן אם נדע לחשב את האיבר ה-n-1 וה-n-2, אז נוכל לחשב את האיבר ה-n.
      */
 
+
     public static int fibonacci(int n) {
         if (n == 0) {
             return 0;
@@ -54,5 +69,13 @@ public class _01_recursion {
         }
 
         return fibonacci(n - 1) + fibonacci(n - 2);
+        //f(n) -> f(n-1),f(n-2)
+        //f(n-1) -> f(n-2),f(n-3)
+    }
+    public static void main(String[] args) {
+        int n = 4;
+      //  System.out.println(factorial(n));
+     //   System.out.println(factorial(-1));
+        System.out.println(fibonacci(n));
     }
 }

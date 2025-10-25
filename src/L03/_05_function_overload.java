@@ -6,7 +6,18 @@ public class _05_function_overload {
     זה אומר שאנחנו יכולים שיהיו לנו פונקציות עם אותו שם ואותו ערך החזרה וההבדל בינהן יהיה הערך החזרה
      */
 
+
+
     public static int min(int x, int y) {
+        if (x < y) {
+            return x;
+        }
+
+        // אם אנחנו פה אז y קטן יותר
+        return y;
+    }
+
+    public static float min(float x, float y) {
         if (x < y) {
             return x;
         }
@@ -30,6 +41,16 @@ public class _05_function_overload {
         return z;
     }
     //how to do max version?
+    public static float max(float x, float y) {
+        if (x > y) {
+            return x;
+        }
+        return y;
+    }
+    public static void main(String[] args) {
+        int number = 10;
+        number = 11;
+    }
 
 
 }

@@ -11,6 +11,9 @@ public class _08_array_operations {
         // יצירת מערך
         int[] arr = {1, 2, 3, 4, 5};
 
+
+
+
         // אורך מערך
         System.out.println(arr.length);
 
@@ -31,7 +34,7 @@ public class _08_array_operations {
          */
 
         // יצירת מערך
-        int[] array = {1, 2, 3, 4, 5};
+        int[] array = {5, 4, 3, 2, 1};
         int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
         // הדפסת מערך
@@ -46,13 +49,15 @@ public class _08_array_operations {
         // חיפוש במערך
         // אם הערך נמצא במערך יחזיר את האינדקס שבו הוא נמצא
         // אם הערך לא נמצא במערך יחזיר -1
+        //[1,2,3,4,5,6]
         System.out.println(Arrays.binarySearch(array, 3));
         System.out.println(Arrays.binarySearch(array, 6));
 
         // העתקת מערך
         // מקבל מערך ומספר שאומר כמה תאים להעתיק
         // ומחזיר מערך חדש עם הערכים האותו ערכים
-        int[] copy = Arrays.copyOf(array, array.length); // מעתיק את כל המערך
+        //arr2 = arr1;
+        int[] copy = Arrays.copyOf(array, array.length * 2); // מעתיק את כל המערך
         int[] copy_range = Arrays.copyOfRange(array, 1, 3); // מעתיק מהאינדקס 1 כולל עד האינדקס 3 לא כולל
 
         System.out.println(Arrays.toString(copy));
@@ -69,7 +74,7 @@ public class _08_array_operations {
 
         // יצירת מערך חדש עם ערכים חוזרים
         int[] repeat = new int[5];
-        Arrays.fill(repeat, 10);
-        System.out.println(Arrays.toString(repeat));
+        Arrays.fill(array, 10);
+        System.out.println(Arrays.toString(array));
     }
 }

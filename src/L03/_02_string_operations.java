@@ -60,6 +60,7 @@ public class _02_string_operations {
         System.out.println(s.charAt(0)); // מתחיל מ-0
         System.out.println(s.charAt(2)); // התו השלישי - l
 
+
         // חיתוך מחרוזת - לקבל חלק מהמחרוזת
         // מהאינדקס 0 כולל עד האינדקס 5 לא כולל
         System.out.println(s.substring(0, 5)); // Hello (אינקס 5 זה כבר הרווח, מתחיל מ-0)

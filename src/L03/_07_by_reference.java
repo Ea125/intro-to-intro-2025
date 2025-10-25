@@ -22,10 +22,13 @@ public class _07_by_reference {
     דומגאה:
      השמה של כל הערכים במערך לערך חדש
       */
-    public static void setAll(int[] arr, int value) {
+    //[1,2,3,4,5],20
+    //[20,20,20..]
+    public static int[] setAll(int[] arr, int value) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = value;
         }
+        return arr;
     }
 
     public static void addMorning(String s){
@@ -36,7 +39,7 @@ public class _07_by_reference {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         System.out.println(arr);
-        setAll(arr, 8);
+        int[] arr2 = setAll(arr, 8);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
